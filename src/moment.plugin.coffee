@@ -10,4 +10,4 @@ module.exports = (BasePlugin) ->
       for model in opts.collection.models
         for format in @config.formats
           if model.attributes[format.raw]
-            model.attributes[format.formatted] = moment().format(format.format)
+            model.attributes[format.formatted] = moment(model.attributes[format.raw]).format(format.format)
