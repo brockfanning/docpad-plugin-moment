@@ -1,0 +1,5 @@
+{
+    "version": "2.0.0",
+    "keywords": ["docpad","docpad-plugin","moment","date","time"],
+    "main": "./src/moment.plugin.coffee"
+}
