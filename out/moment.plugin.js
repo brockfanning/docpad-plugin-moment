@@ -24,20 +24,24 @@
         _results = [];
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
           model = _ref[_i];
-          _results.push((function() {
-            var _j, _len1, _ref1, _results1;
-            _ref1 = this.config.formats;
-            _results1 = [];
-            for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
-              format = _ref1[_j];
-              if (model.attributes[format.raw]) {
-                _results1.push(model.attributes[format.formatted] = moment(model.attributes[format.raw]).format(format.format));
-              } else {
-                _results1.push(void 0);
+          if (this.config.formats) {
+            _results.push((function() {
+              var _j, _len1, _ref1, _results1;
+              _ref1 = this.config.formats;
+              _results1 = [];
+              for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
+                format = _ref1[_j];
+                if (model.attributes[format.raw]) {
+                  _results1.push(model.attributes[format.formatted] = moment(model.attributes[format.raw]).format(format.format));
+                } else {
+                  _results1.push(void 0);
+                }
               }
-            }
-            return _results1;
-          }).call(this));
+              return _results1;
+            }).call(this));
+          } else {
+            _results.push(void 0);
+          }
         }
         return _results;
       };

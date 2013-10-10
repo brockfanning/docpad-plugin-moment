@@ -8,6 +8,7 @@ module.exports = (BasePlugin) ->
     name: 'moment'
     renderBefore: (opts) ->
       for model in opts.collection.models
-        for format in @config.formats
-          if model.attributes[format.raw]
-            model.attributes[format.formatted] = moment(model.attributes[format.raw]).format(format.format)
+        if (@config.formats)
+          for format in @config.formats
+            if model.attributes[format.raw]
+              model.attributes[format.formatted] = moment(model.attributes[format.raw]).format(format.format)
