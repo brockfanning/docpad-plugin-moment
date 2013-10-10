@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-lunr",
-  "homepage": "GITHUB",
+  "homepage": "https://github.com/brockfanning/docpad-plugin-moment",
   "version": "2.0.0",
   "description": "Adds support for date formatting with Moment.js",
   "keywords": [
@@ -30,11 +30,11 @@
     }
   ],
   "bugs": {
-    "url": "GITHUB"
+    "url": "https://github.com/brockfanning/docpad-plugin-lunr/issues"
   },
   "repository": {
     "type": "git",
-    "url": "GITHUB"
+    "url": "https://github.com/brockfanning/docpad-plugin-lunr.git"
   },
   "engines": {
     "node": ">=0.4",
@@ -47,5 +47,5 @@
     "coffee-script": "~1.6.2",
     "docpad": ">=6.37 <7"
   },
-  "main": "./src/moment.plugin.coffee"
+  "main": "./out/moment.plugin.js"
 }

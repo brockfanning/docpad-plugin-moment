@@ -12,14 +12,14 @@ Configure some formats in your `docpad.coffee`:
 plugins:
   moment:
     formats: [
-      raw: 'date', format: 'MMMM Do YYYY', formatted: 'humanDate',
-      raw: 'date', format: 'YYYY-MM-DD', formatted: 'computerDate'
+      {raw: 'date', format: 'MMMM Do YYYY', formatted: 'humanDate'}
+      {raw: 'date', format: 'YYYY-MM-DD', formatted: 'computerDate'}
     ]
 ```
 
-Raw = the name of the existing attribute in your content
-Format = the format you want it changed to
-Formatted = a name for the new version
+* raw = the name of the existing attribute in your content
+* format = the format you want it changed to
+* formatted = a name for the new version
 
 Then, in your template, instead of:
 ```eco
