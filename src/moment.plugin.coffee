@@ -6,6 +6,9 @@ module.exports = (BasePlugin) ->
   class MomentPlugin extends BasePlugin
     # Plugin name
     name: 'moment'
+    extendTemplateData: ({templateData}) ->
+      templateData.moment = () -> 
+        return moment.apply(this, arguments)
     renderBefore: (opts) ->
       for model in opts.collection.models
         if (@config.formats)

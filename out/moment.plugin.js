@@ -18,6 +18,14 @@
 
       MomentPlugin.prototype.name = 'moment';
 
+      MomentPlugin.prototype.extendTemplateData = function(_arg) {
+        var templateData;
+        templateData = _arg.templateData;
+        return templateData.moment = function() {
+          return moment.apply(this, arguments);
+        };
+      };
+
       MomentPlugin.prototype.renderBefore = function(opts) {
         var format, model, _i, _len, _ref, _results;
         _ref = opts.collection.models;

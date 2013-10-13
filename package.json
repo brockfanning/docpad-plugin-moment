@@ -1,7 +1,7 @@
 {
   "name": "docpad-plugin-moment",
   "homepage": "https://github.com/brockfanning/docpad-plugin-moment",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Adds support for date formatting with Moment.js",
   "license": "MIT",
   "keywords": [
