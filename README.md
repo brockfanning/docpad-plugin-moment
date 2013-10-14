@@ -31,6 +31,18 @@ You would do:
 <span>Posted on <%- @humanDate %></span>
 ```
 
+## General use
+
+To do anything else that the Moment.js library allows, you can access Moment using the `@moment()` helper. For example,
+
+``` eco
+<span><%= @moment('2013-10-13').format('MMMM Do YYYY') %></span>
+```
+...would output...
+``` html
+<span>October 13th 2013</span>
+```
+
 ## Future
 
 * Provide a generic templateHelper for on-the-fly formatting
