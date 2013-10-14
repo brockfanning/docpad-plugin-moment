@@ -42,8 +42,3 @@ To do anything else that the Moment.js library allows, you can access Moment usi
 ``` html
 <span>October 13th 2013</span>
 ```
-
-## Future
-
-* Provide a generic templateHelper for on-the-fly formatting
-* Maybe incorporate some of the other functionality of Moment.js?
