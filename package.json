@@ -1,9 +1,12 @@
 {
+  "title": "DocPad Moment Plugin",
   "name": "docpad-plugin-moment",
   "homepage": "https://github.com/brockfanning/docpad-plugin-moment",
   "version": "2.0.2",
   "description": "Adds support for date formatting with Moment.js",
-  "license": "MIT",
+  "license": {
+    "type": "MIT"
+  },
   "keywords": [
     "docpad",
     "docpad-plugin",
@@ -11,25 +14,19 @@
     "date",
     "time"
   ],
-  "author": {
-    "name": "Brock Fanning",
-    "email": "brockfanning@gmail.com",
-    "url": "http://brockfanning.com"
-  },
+  "author": "2013+ Brock Fanning <brockfanning@gmail.com> (http://brockfanning.com)",
   "maintainers": [
-    {
-      "name": "Brock Fanning",
-      "email": "brockfanning@gmail.com",
-      "url": "http://brockfanning.com"
-    }
+    "Brock Fanning <brockfanning@gmail.com> (http://brockfanning.com)"
   ],
   "contributors": [
-    {
-      "name": "Brock Fanning",
-      "email": "brockfanning@gmail.com",
-      "url": "http://brockfanning.com"
-    }
+    "brockfanning (https://github.com/brockfanning)"
   ],
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "david": true,
+    "daviddev": true
+  },
   "bugs": {
     "url": "https://github.com/brockfanning/docpad-plugin-moment/issues"
   },
@@ -46,7 +43,8 @@
   },
   "devDependencies": {
     "coffee-script": "~1.6.2",
-    "docpad": ">=6.37 <7"
+    "docpad": ">=6.37 <7",
+    "projectz": "~0.3.5"
   },
   "main": "./out/moment.plugin.js"
 }
