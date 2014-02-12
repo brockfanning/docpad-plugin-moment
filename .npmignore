@@ -10,7 +10,21 @@ build/
 components/
 bower_components/
 node_modules/
-out/
+
+# Development Files
+.travis*
+Cakefile
+Makefile
+BACKERS.md
+CONTRIBUTING.md
+HISTORY.md
+**/src/
+**/test/
+
+# Other Package Definitions
+template.js
+component.json
+bower.json
 
 # =====================================
 # CUSTOM MODIFICATIONS
