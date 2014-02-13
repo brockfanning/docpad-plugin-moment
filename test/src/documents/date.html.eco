@@ -1,0 +1,16 @@
+---
+title: "Test for Moment"
+date: "2013-4-8"
+---
+
+<h1><%= @document.title %></h1>
+<dl>
+	<dt>Raw:</dt>
+	<dd><%- @document.date %></dd>
+	<dt>Manually Formatted:</dt>
+	<dd><%= @moment('2013-10-13').format('MMMM Do YYYY') %></dd>
+	<dt>Human Date:</dt>
+	<dd><%- @document.humanDate %></dd>
+	<dt>Computer Date:</dt>
+	<dd><%- @document.computerDate %></dd>
+</dl>

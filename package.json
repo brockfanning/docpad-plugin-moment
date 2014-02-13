@@ -44,7 +44,11 @@
   "devDependencies": {
     "coffee-script": "~1.6.2",
     "docpad": ">=6.37 <7",
-    "projectz": "~0.3.5"
+    "projectz": "~0.3.5",
+    "docpad-plugin-eco": "~2.0.3"
   },
-  "main": "./out/moment.plugin.js"
+  "main": "./out/moment.plugin.js",
+  "scripts": {
+    "test": "node ./out/moment.test.js"
+  }
 }
