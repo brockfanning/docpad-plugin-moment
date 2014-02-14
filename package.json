@@ -39,12 +39,12 @@
     "docpad": "6.x"
   },
   "dependencies": {
-    "moment": "~2.2.1"
+    "moment": "~2.5.1"
   },
   "devDependencies": {
-    "coffee-script": "~1.6.2",
+    "coffee-script": "~1.7.1",
     "docpad": ">=6.37 <7",
-    "projectz": "~0.3.5",
+    "projectz": "~0.3.10",
     "docpad-plugin-eco": "~2.0.3"
   },
   "main": "./out/moment.plugin.js",
