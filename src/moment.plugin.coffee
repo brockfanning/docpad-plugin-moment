@@ -10,6 +10,7 @@ module.exports = (BasePlugin) ->
       templateData.moment = () -> 
         return moment.apply(this, arguments)
     renderBefore: (opts) ->
+      moment.lang(@config.lang) if (@config.lang)
       for model in opts.collection.models
         if (@config.formats)
           for format in @config.formats
