@@ -39,7 +39,7 @@
     "docpad": "6.x"
   },
   "dependencies": {
-    "moment": "~2.5.1"
+    "moment": "~2.8.3"
   },
   "devDependencies": {
     "coffee-script": "~1.7.1",
